@@ -1,0 +1,6 @@
+framework module Pods_CodeOnTheGo {
+  umbrella header "Pods-CodeOnTheGo-umbrella.h"
+
+  export *
+  module * { export * }
+}

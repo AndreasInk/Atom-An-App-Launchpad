@@ -1,0 +1,19 @@
+framework module FirebaseMLVisionAutoML {
+  umbrella header "FirebaseMLVisionAutoML.h"
+  export *
+  module * { export * }
+  link "c++"
+  link "z"
+  link framework "AVFoundation"
+  link framework "Accelerate"
+  link framework "CoreFoundation"
+  link framework "CoreGraphics"
+  link framework "CoreImage"
+  link framework "CoreMedia"
+  link framework "CoreVideo"
+  link framework "Foundation"
+  link framework "QuartzCore"
+  link framework "Security"
+  link framework "SystemConfiguration"
+  link framework "UIKit"
+}
