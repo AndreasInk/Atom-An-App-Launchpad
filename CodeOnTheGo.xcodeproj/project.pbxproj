@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04D23B556CA145484BFA1E35 /* Pods_CodeOnTheGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8C451C813777A1E7A02884 /* Pods_CodeOnTheGo.framework */; };
+		342644A025947B0900DFEBF8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426449F25947B0900DFEBF8 /* LoginView.swift */; };
 		E10CF8E5256EB89100E8532F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10CF8E4256EB89100E8532F /* AppDelegate.swift */; };
 		E10CF8E7256EB89100E8532F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10CF8E6256EB89100E8532F /* SceneDelegate.swift */; };
 		E10CF8E9256EB89100E8532F /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10CF8E8256EB89100E8532F /* PreviewView.swift */; };
@@ -87,6 +88,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3426449F25947B0900DFEBF8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AA3124BC86BF704AF8B6BC61 /* Pods-CodeOnTheGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeOnTheGo.release.xcconfig"; path = "Target Support Files/Pods-CodeOnTheGo/Pods-CodeOnTheGo.release.xcconfig"; sourceTree = "<group>"; };
 		DB8C451C813777A1E7A02884 /* Pods_CodeOnTheGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeOnTheGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10CF8E1256EB89100E8532F /* CodeOnTheGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeOnTheGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +185,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3474B6A1259274A9003AF873 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3426449F25947B0900DFEBF8 /* LoginView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		9FE9B3499681E121C11C214D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +251,7 @@
 				E1067E61257CCC3D0048E6BD /* Home */,
 				E1A49EA0257C90EE00463A53 /* Editing */,
 				E1A49E9A257C881E00463A53 /* ML */,
+				3474B6A1259274A9003AF873 /* Auth */,
 				E1BB3431256EDD1F004A6510 /* BlurView.swift */,
 				E10CF8F9256EC2A400E8532F /* Data.swift */,
 				E15D2B10257ED846000E1A43 /* UserData.swift */,
@@ -595,6 +606,7 @@
 				E1CC1D69257074FA00CBCADB /* ImagetoCode.swift in Sources */,
 				E1B757B9257850FD00C26D58 /* APITest.swift in Sources */,
 				E1CC1D952572B79A00CBCADB /* DetailsView.swift in Sources */,
+				342644A025947B0900DFEBF8 /* LoginView.swift in Sources */,
 				E1BB3428256EDCA0004A6510 /* TopTab.swift in Sources */,
 				E1A6CD5B257AC84700245966 /* MNISTClassifier.mlmodel in Sources */,
 				E1F9507A2573359A00FE02DA /* SFSymbolsView.swift in Sources */,

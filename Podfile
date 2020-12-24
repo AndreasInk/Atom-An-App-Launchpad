@@ -10,6 +10,7 @@ pod 'Firebase/Storage'
 pod 'Firebase/MLVision'
 pod 'Firebase/MLVisionAutoML'
 pod 'Firebase/Firestore'
+pod 'Firebase/Auth'
 
 # Optionally, include the Swift extensions if you're using Swift.
 pod 'FirebaseFirestoreSwift'
