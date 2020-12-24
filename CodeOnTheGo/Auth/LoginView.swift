@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct LoginView: View {
     @State var email = ""
     @State var password = ""
+    @State var loginStatus = ""
     
     var body: some View {
         VStack {
@@ -26,19 +28,48 @@ struct LoginView: View {
                     Text("Email:")
                     TextField("Your Email Address", text: $email)
                 }
-                .padding(.horizontal)
                 
                 HStack {
                     Text("Password:")
                     TextField("Your Account Password", text: $password)
                 }
-                .padding(.horizontal)
                 
             }
+            .padding()
+            
+            Button(action: self.login) {
+                Text("Login")
+                    .foregroundColor(.white)
+            }
+            .padding(.horizontal, 20)
+            .padding(.vertical, 12)
+            .background(
+                LinearGradient(gradient: Gradient(colors: [.blue, .purple]), startPoint: .leading, endPoint: .trailing)
+                    .clipShape(RoundedRectangle(cornerRadius: 25.0))
+            )
+            
+            Text(loginStatus)
             
             Spacer()
             
         }
+    }
+    
+    func login() {
+        Auth.auth().signIn(withEmail: self.email, password: self.password, completion: {result, error in
+            
+            if let error = error {
+                print(error)
+                self.loginStatus = error.localizedDescription
+                self.password = ""
+            } else {
+                print("\(self.email) has been logged in!")
+                self.loginStatus = "Login Successful!"
+                self.email = ""
+                self.password = ""
+            }
+            
+        })
     }
 }
 
