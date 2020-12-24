@@ -27,11 +27,13 @@ struct LoginView: View {
                 HStack {
                     Text("Email:")
                     TextField("Your Email Address", text: $email)
+                        .disableAutocorrection(true)
+                        .autocapitalization(.none)
                 }
                 
                 HStack {
                     Text("Password:")
-                    TextField("Your Account Password", text: $password)
+                    SecureField("Your Account Password", text: $password)
                 }
                 
             }
